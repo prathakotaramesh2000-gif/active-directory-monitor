@@ -1,0 +1,17 @@
+=== Active Directory Monitor - Kali ===
+
+Headers found: ['timestamp', 'event_id', 'username', 'source_ip', 'computer', 'message']
+
+2026-10-22T09:00:00 | 4624 | ramesh | 192.168.1.20 | Successful logon
+2026-10-22T09:01:00 | 4625 | admin | 192.168.1.50 | Failed logon
+2026-10-22T09:01:10 | 4625 | admin | 192.168.1.50 | Failed logon
+2026-10-22T09:01:20 | 4625 | admin | 192.168.1.50 | Failed logon
+2026-10-22T09:02:00 | 4740 | admin | N/A | Account locked out
+2026-10-22T09:10:00 | 4624 | ramesh | 192.168.1.20 | Successful logon
+2026-10-22T09:15:00 | 4625 | guest | 192.168.1.70 | Failed logon
+
+--- FINAL REPORT ---
+[CRITICAL] admin LOCKED at 2026-10-22T09:02:00
+[BRUTE FORCE] admin 3 fails from 192.168.1.50
+
+Failed counts: {'admin': 3, 'guest': 1}
